@@ -1,0 +1,121 @@
+@import url('../../style.css');
+
+.body-login {
+  font-family: Arial, sans-serif;
+  background: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: var(--color-background);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(243, 143, 11, 0.3);
+  width: 300px;
+}
+
+.login-title {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.login-label {
+  display: block;
+  margin-top: 1rem;
+  color: var(--color-text);
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  box-sizing: border-box;
+  border: 1px solid var(--color-main);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--color-muted-background);
+  color: var(--color-text);
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: var(--color-main);
+  outline: none;
+  background-color: var(--color-background);
+}
+
+.login-button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-main);
+  color: var(--color-background);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background: #c27507;
+}
+
+.login-error {
+  color: red;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--color-text);
+}
+
+.login-link {
+  color: var(--color-main);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 1.1rem;
+  padding: 0;
+}
+
+.password-toggle-btn:focus {
+  outline: none;
+}
+
+.login-logo {
+  display: block;
+  margin: 0 auto 1rem auto;
+  max-width: 100px;
+  height: auto;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Dashboard - Libros Leídos</title>
+    <link rel="stylesheet" href="../navbar/navbar.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+</head>
+
+<body class="body-dashboard">
+    <div id="navbar-container"></div>
+
+    <div class="dashboard-container">
+        <div class="header-books">
+            <h2>Mis libros leídos</h2>
+            <button id="openModalBtn" class="button-add">Agregar libro</button>
+        </div>
+
+        <table class="books-table" id="booksTable">
+            <thead>
+                <tr>
+                    <th class="books-table__th">No.</th>
+                    <th class="books-table__th">Título</th>
+                    <th class="books-table__th">Autor</th>
+                    <th class="books-table__th">Fecha lectura</th>
+                    <th class="books-table__th">Páginas</th>
+                    <th class="books-table__th">Recomendado</th>
+                    <th class="books-table__th">Acciones</th>
+                </tr>
+            </thead>
+            <tbody class="books-table__tbody"></tbody>
+        </table>
+
+        <div id="bookModal" class="modal">
+            <div class="modal__content">
+                <span class="modal__close" id="closeModalBtn">&times;</span>
+                <h3>Agregar nuevo libro</h3>
+                <form id="bookForm" class="book-form">
+                    <input type="text" id="title" placeholder="Título" required class="book-form__input-text" />
+                    <input type="text" id="author" placeholder="Autor" required class="book-form__input-text" />
+                    <input type="date" id="readDate" lang="es" required class="book-form__input-date" />
+                    <input type="number" id="pages" placeholder="Número de páginas" min="1" required
+                        class="book-form__input-number" />
+                    <label class="book-form__label" for="recommended">
+                        <input type="checkbox" id="recommended" />
+                        <span>Recomendado</span>
+                    </label>
+                    <div class="button-container">
+                        <button type="submit" class="btn">Agregar libro</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../navbar/navbar.js"></script>
+    <script type="module">
+        import { loadNavbar } from '../navbar/navbar.js';
+        loadNavbar('navbar-container');
+    </script>
+    <script type="module" src="dashboard.js"></script>
+</body>
+
+</html>

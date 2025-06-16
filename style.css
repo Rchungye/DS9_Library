@@ -1,0 +1,16 @@
+:root {
+    --color-main: #f48434;
+    /* Se usa como color principal en botones, íconos o elementos destacados */
+
+    --color-secondary: #F2EFEA;
+    /* Se usa como fondo secundario o para resaltar secciones suaves */
+
+    --color-background: #FFFFFF;
+    /* Se usa como fondo principal de toda la página */
+
+    --color-text: #000000;
+    /* Se usa para el texto principal de la interfaz */
+
+    --color-muted-background: #F5F5F5;
+    /* Se usa como fondo de tarjetas, cajas o secciones menos importantes */
+}

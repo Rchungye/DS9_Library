@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Libros Leídos</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body class="body-login">
+  <div class="login-container">
+    <img src="../../public/booklogo.png" alt="Logo Libros Leídos" class="login-logo" />
+    <h2 class="login-title">Iniciar Sesión</h2>
+    <form id="loginForm">
+      <label class="login-label" for="username">Usuario:</label>
+      <input class="login-input" type="text" id="username" required />
+
+      <label class="login-label" for="password">Contraseña:</label>
+      <input class="login-input" type="password" id="password" required />
+
+      <button class="login-button" type="submit">Ingresar</button>
+    </form>
+
+    <p class="login-text">¿No tienes cuenta?
+      <a class="login-link" href="../register/register.html">Regístrate aquí</a>
+    </p>
+
+    <p id="error" class="login-error"></p>
+  </div>
+
+  <script type="module" src="login.js"></script>
+</body>
+
+</html>

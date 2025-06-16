@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Estadísticas - Libros Leídos</title>
+  <link rel="stylesheet" href="../navbar/navbar.css" />
+  <link rel="stylesheet" href="statistics.css" />
+</head>
+
+<body class="body-statistics">
+  <div id="navbar-container"></div>
+
+  <div class="statistics-container">
+    <h2>Estadísticas de Lectura</h2>
+
+    <h3>Resumen General</h3>
+    <div class="statistics-cards-row">
+      <div class="statistics-card">
+        <p class="statistics-card-title">Total de libros leídos</p>
+        <p class="statistics-card-value" id="totalBooks">0</p>
+      </div>
+      <div class="statistics-card">
+        <p class="statistics-card-title">Promedio de páginas por libro</p>
+        <p class="statistics-card-value" id="avgPages">0</p>
+      </div>
+    </div>
+
+    <h3>Recomendaciones</h3>
+    <div class="chart-grid">
+      <div class="chart-label">Recomendaría</div>
+      <div class="chart-bar recommend" id="barRecommend">0</div>
+      <div class="chart-label">No recomendaría</div>
+      <div class="chart-bar not-recommend" id="barNotRecommend">0</div>
+    </div>
+
+    <div class="chart-legend">
+      <div><span class="legend-box recommend"></span> Recomendaría</div>
+      <div><span class="legend-box not-recommend"></span> No recomendaría</div>
+    </div>
+  </div>
+
+  <script type="module" src="../navbar/navbar.js"></script>
+  <script type="module">
+    import { loadNavbar } from '../navbar/navbar.js';
+    loadNavbar('navbar-container');
+  </script>
+  <script type="module" src="statistics.js"></script>
+</body>
+
+</html>

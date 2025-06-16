@@ -1,0 +1,126 @@
+@import url('../../style.css');
+
+.body-statistics {
+  font-family: Arial, sans-serif;
+  background: var(--color-secondary);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.statistics-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 2rem auto;
+  background: var(--color-background);
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(243, 143, 11, 0.2);
+  text-align: center;
+  color: var(--color-text);
+}
+
+h2,
+h3 {
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.statistics-stats {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: var(--color-text);
+}
+
+.chart-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-row-gap: 20px;
+  align-items: center;
+  text-align: left;
+}
+
+.chart-label {
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.chart-bar {
+  height: 30px;
+  border-radius: 6px;
+  background-color: var(--color-muted-background);
+  transition: width 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--color-background);
+}
+
+.chart-bar.recommend {
+  background-color: var(--color-main);
+}
+
+.chart-bar.not-recommend {
+  background-color: #d32f2f;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 25px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.legend-box {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.legend-box.recommend {
+  background-color: var(--color-main);
+}
+
+.legend-box.not-recommend {
+  background-color: #d32f2f;
+}
+
+.statistics-cards-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.statistics-card {
+  background-color: var(--color-muted-background);
+  color: var(--color-text);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  flex: 1 1 200px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.statistics-card-title {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.statistics-card-value {
+  font-size: 1.6em;
+  font-weight: bold;
+}

@@ -1,0 +1,56 @@
+@import url('../../style.css');
+
+.navbar {
+  width: 180px;
+  background-color: var(--color-main);
+  height: 100vh;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-btn {
+  background-color: var(--color-muted-background);
+  color: var(--color-text);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #e2e2e2;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: var(--color-background);
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+.welcome-msg {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  padding: 10px;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
+
+.nav-logo {
+  width: 100px;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 12px;
+}
