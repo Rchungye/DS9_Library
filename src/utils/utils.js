@@ -14,16 +14,16 @@ export function validateSession() {
     const session = localStorage.getItem('sessionUser');
     if (session && session !== 'cerrado') return;
 
-    window.location.href = '../login/login.html';
+    window.location.href = '../../login/login.html';
 }
 
 // Redirige según si hay sesión activa o no (inicio de la app)
 export function validateInitialSession() {
     const session = localStorage.getItem('sessionUser');
     if (session && session !== 'cerrado') {
-        window.location.href = './components/dashboard/dashboard.html';
+        window.location.href = './src/components/dashboard/dashboard.html';
         return;
     }
 
-    window.location.href = './components/login/login.html';
+    window.location.href = './src/components/login/login.html';
 }

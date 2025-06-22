@@ -73,7 +73,7 @@ const NavbarApp = (() => {
       if (confirm(`¿Seguro que quieres cerrar sesión, ${name}?`)) {
         localStorage.removeItem('sessionUser');
         alert('Sesión cerrada correctamente.');
-        window.location.href = '../../index.html';
+        window.location.href = '../../../index.html';
       }
     });
   }

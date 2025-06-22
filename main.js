@@ -1,4 +1,4 @@
-import { validateInitialSession } from './utils/utils.js';
+import { validateInitialSession } from './src/utils/utils.js';
 
 // Inicia la app validando si hay sesión activa (redirección automática)
 (() => {
